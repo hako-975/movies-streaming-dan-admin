@@ -9,7 +9,7 @@ Cara menggunakan:
 4. Jalankan localhost/resensi_film_andri
 5. Selesai
 
-Untuk halaman Admin ada pada terdapat footer pada link admin room's
+Untuk halaman mengakses Admin, ada dibagian footer pada link admin room's
 
 ❥ Username: andri123
 
