@@ -1,0 +1,40 @@
+.img-list-cover {
+	width: 50px;
+	height: 75px;
+}
+
+@media (min-width: 992px) {
+	.img-list-cover {
+		width: 75px;
+		height: 100px;
+	}
+}
+
+.img-profile {
+	width: 200px;
+	height: 200px;
+}
+
+@media (min-width: 992px) {
+	.img-profile {
+		width: 300px;
+		height: 300px;
+	}
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+ 
+::-webkit-scrollbar-track {     
+    background: #787E84;    
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: #343A40;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #010710;
+}
