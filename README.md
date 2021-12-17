@@ -1,4 +1,4 @@
-# movies-example-with-admin
+# movies-streaming-dan-admin
 Seperti indoxxi sebagai tempat sarana live streaming atau download film
 Aplikasi ini hanya dibuat dengan PHP Native dan template Admin LTE
 
