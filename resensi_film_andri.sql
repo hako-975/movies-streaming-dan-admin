@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 29 Bulan Mei 2020 pada 18.45
--- Versi server: 10.4.11-MariaDB
--- Versi PHP: 7.4.3
+-- Waktu pembuatan: 15 Jul 2022 pada 18.39
+-- Versi server: 10.4.24-MariaDB
+-- Versi PHP: 8.1.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -46,21 +45,21 @@ CREATE TABLE `tb_film` (
 
 INSERT INTO `tb_film` (`id_film`, `nama_film`, `tahun_film`, `sutradara_film`, `cover_film`, `rating_film`, `tanggal_diposting`, `id_genre`, `id_user`) VALUES
 (1, 'Avenger', 2019, 'Anthony Russo dan Joe Russo', '08042020104652.png', 8.4, 1590495796, 1, 1),
-(2, 'Mr. Beans Holiday', 2007, 'Steve Bendelack', '08042020154003.png', 6.4, 1590495796, 3, 1),
+(2, 'Mr. Beans Holiday', 2007, 'Steve Bendelack', '08042020154003.png', 6.4, 1652461011, 2, 1),
 (3, 'Bean', 1997, 'Mel Smith', '08042020154348.png', 6.5, 1590495796, 2, 1),
 (4, 'Spiderman: Far From Home', 2019, 'Jon Watts', '08042020154655.png', 7.5, 1590495796, 1, 1),
-(5, 'Insidious', 2010, 'James Wan', '08042020155915.png', 6.8, 1590495796, 4, 1),
-(6, 'Inspector Gadget', 1999, 'David Kellogg', '08042020160106.png', 4.1, 1590495796, 3, 1),
-(7, 'The Conjuring', 2013, 'James Wan', '08042020160311.png', 7.5, 1590495796, 4, 1),
+(5, 'Insidious', 2010, 'James Wan', '08042020155915.png', 6.8, 1652460975, 3, 1),
+(6, 'Inspector Gadget', 1999, 'David Kellogg', '08042020160106.png', 4.1, 1652460991, 2, 1),
+(7, 'The Conjuring', 2013, 'James Wan', '08042020160311.png', 7.5, 1652461073, 3, 1),
 (8, 'Furious 7', 2015, 'James Wan', '08042020160519.png', 7.2, 1590495796, 1, 1),
 (9, 'Batman v Superman: Dawn of Justice', 2016, 'Zack Snyder', '08042020160832.png', 6.5, 1590495796, 1, 1),
-(10, 'Spies in Disguise', 2019, 'Nick Bruno dan Troy Quane', '08042020161132.png', 6.8, 1590495796, 5, 1),
-(11, 'Cars', 2006, 'John Lasseter', '08042020161335.png', 7.1, 1590495796, 5, 1),
-(12, 'Miracle in Cell No. 7', 2013, 'Hwan-kyung Lee', '08042020162415.png', 8.2, 1590495796, 6, 1),
-(13, 'Titanic', 1997, 'James Cameron', '08042020163414.png', 7.8, 1590495796, 6, 1),
-(14, 'Sonic the Hedgehog', 2020, 'Jeff Fowler', '08042020173537.png', 6.6, 1590495796, 5, 1),
-(15, 'Frozen II', 2019, 'Chris Buck dan Jennifer Lee', '08042020173743.png', 7, 1590495796, 5, 1),
-(16, 'Sherlock Holmes: A Game of Shadows', 2011, 'Guy Ritchie', '08042020174222.png', 7.5, 1590495796, 1, 1),
+(10, 'Spies in Disguise', 2019, 'Nick Bruno Dan Troy Quane', '08042020161132.png', 6.8, 1652461063, 4, 1),
+(11, 'Cars', 2006, 'John Lasseter', '08042020161335.png', 7.1, 1652460958, 4, 1),
+(12, 'Miracle in Cell No. 7', 2013, 'Hwan-kyung Lee', '08042020162415.png', 8.2, 1652461000, 5, 1),
+(13, 'Titanic', 1997, 'James Cameron', '08042020163414.png', 7.8, 1652461082, 5, 1),
+(14, 'Sonic the Hedgehog', 2020, 'Jeff Fowler', '08042020173537.png', 6.6, 1652461041, 4, 1),
+(15, 'Frozen II', 2019, 'Chris Buck Dan Jennifer Lee', '08042020173743.png', 7, 1652460965, 4, 1),
+(16, 'Sherlock Holmes: A Game of Shadows', 2011, 'Guy Ritchie', '08042020174222.png', 7.5, 1652461027, 6, 1),
 (17, 'Jumanji: Welcome to the Jungle', 2017, 'Jake Kasdan', '08042020210238.png', 6.9, 1590495796, 7, 1),
 (18, 'Annihilation', 2018, 'Alex Garland', '08042020210744.png', 6.9, 1590495796, 7, 1),
 (19, 'Harry Potter and the Prisoner of Azkaban', 2004, 'Alfonso Cuaron', '08042020211039.png', 7.9, 1590495796, 7, 1),
@@ -141,7 +140,9 @@ INSERT INTO `tb_komentar` (`id_komentar`, `nama_komentar`, `isi_komentar`, `tang
 (111, 'Buncis', 'Idem', 1590495796, 8),
 (114, 'Anonim', 'Filmnya Bagus', 1590769117, 3),
 (115, 'anonimos', 'iya bener bagus', 1590769173, 3),
-(116, 'Spider loverss', 'kerennnn bgttt', 1590769268, 4);
+(116, 'Spider loverss', 'kerennnn bgttt', 1590769268, 4),
+(117, 'anonim', 'GG', 1652460850, 4),
+(118, 'anonim', 'Mantap', 1652460862, 4);
 
 -- --------------------------------------------------------
 
@@ -192,7 +193,18 @@ INSERT INTO `tb_riwayat` (`id_riwayat`, `id_user`, `tindakan`, `tanggal`) VALUES
 (29, 1, 'Berhasil mengubah password', 1590501741),
 (30, 1, 'Berhasil menghapus komentar Dettline | Film Ini Bagus', 1590636744),
 (31, 1, 'Berhasil menambahkan film asd', 1590769217),
-(32, 1, 'Berhasil menghapus film ', 1590769222);
+(32, 1, 'Berhasil menghapus film ', 1590769222),
+(33, 1, 'Berhasil mengubah film Cars', 1652460958),
+(34, 1, 'Berhasil mengubah film Frozen II', 1652460965),
+(35, 1, 'Berhasil mengubah film Insidious', 1652460975),
+(36, 1, 'Berhasil mengubah film Inspector Gadget', 1652460991),
+(37, 1, 'Berhasil mengubah film Miracle in Cell No. 7', 1652461000),
+(38, 1, 'Berhasil mengubah film Mr. Beans Holiday', 1652461011),
+(39, 1, 'Berhasil mengubah film Sherlock Holmes: A Game of Shadows', 1652461027),
+(40, 1, 'Berhasil mengubah film Sonic the Hedgehog', 1652461041),
+(41, 1, 'Berhasil mengubah film Spies in Disguise', 1652461063),
+(42, 1, 'Berhasil mengubah film The Conjuring', 1652461073),
+(43, 1, 'Berhasil mengubah film Titanic', 1652461082);
 
 -- --------------------------------------------------------
 
@@ -273,41 +285,19 @@ ALTER TABLE `tb_genre`
 -- AUTO_INCREMENT untuk tabel `tb_komentar`
 --
 ALTER TABLE `tb_komentar`
-  MODIFY `id_komentar` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=117;
+  MODIFY `id_komentar` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=119;
 
 --
 -- AUTO_INCREMENT untuk tabel `tb_riwayat`
 --
 ALTER TABLE `tb_riwayat`
-  MODIFY `id_riwayat` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+  MODIFY `id_riwayat` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
 
 --
 -- AUTO_INCREMENT untuk tabel `tb_user`
 --
 ALTER TABLE `tb_user`
   MODIFY `id_user` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
---
--- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
---
-
---
--- Ketidakleluasaan untuk tabel `tb_film`
---
-ALTER TABLE `tb_film`
-  ADD CONSTRAINT `relasi_genre` FOREIGN KEY (`id_genre`) REFERENCES `tb_genre` (`id_genre`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Ketidakleluasaan untuk tabel `tb_komentar`
---
-ALTER TABLE `tb_komentar`
-  ADD CONSTRAINT `relasi_komentar` FOREIGN KEY (`id_film`) REFERENCES `tb_film` (`id_film`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Ketidakleluasaan untuk tabel `tb_riwayat`
---
-ALTER TABLE `tb_riwayat`
-  ADD CONSTRAINT `tb_riwayat_ibfk_1` FOREIGN KEY (`id_user`) REFERENCES `tb_user` (`id_user`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
